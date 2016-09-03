@@ -13,6 +13,14 @@ global.db.once('open', function() {
   console.log("connected")
 });
 
+require("./app/models/Tasks")
+
+var tasks = mongoose.model('tasks')
+tasks.findOne({}, function(err, tasks){
+	console.log(tasks)
+	console.log(err)
+});
+
 app.use(bodyParser.json()); 
 
 app.use(express.static(__dirname + '/public'));
