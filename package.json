@@ -1,3 +1,8 @@
 {
-	
+  "name": "mean_stack",
+  "version": "0.1",
+  "description": "building out an example MEAN stack",
+  "author": "Bill Shelton <sheltowt@gmail.com>",
+  "dependencies": {
+  }
 }
