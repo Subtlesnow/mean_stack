@@ -1,8 +1,14 @@
 {
   "name": "mean_stack",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "building out an example MEAN stack",
   "author": "Bill Shelton <sheltowt@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheltowt/mean_stack"
+  },
   "dependencies": {
-  }
+    "express": "^4.14.0"
+  },
+  "license": "MIT"
 }
