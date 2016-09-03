@@ -8,6 +8,11 @@ var port = process.env.PORT || 8080;
 
 global.db = (global.db ? global.db : mongoose.createConnection(config.database.connection_url));
 
+global.db.on('error', console.error.bind(console, 'connection error:'));
+global.db.once('open', function() {
+  console.log("connected")
+});
+
 app.use(bodyParser.json()); 
 
 app.use(express.static(__dirname + '/public'));
