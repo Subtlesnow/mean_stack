@@ -7,7 +7,8 @@ module.exports = function(app) {
 
 	app.get(api_root+'/tasks', function(req, res){
 		Tasks.find(function(err, tasks) {
-			return res.send({"works": "bla"})
+
+			return res.send({"works": tasks})
 		})
 	})
 
