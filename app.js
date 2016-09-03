@@ -6,17 +6,11 @@ var config = require('./config.json');
 
 var port = process.env.PORT || 8080;
 
-global.db = (global.db ? global.db : mongoose.createConnection(config.database.connection_url));
+mongoose.connect(config.database.connection_url);
 
-global.db.on('error', console.error.bind(console, 'connection error:'));
-global.db.once('open', function() {
-  console.log("connected")
-});
+Tasks = require("./app/models/Tasks")
 
-require("./app/models/Tasks")
-
-var tasks = mongoose.model('tasks')
-tasks.findOne({}, function(err, tasks){
+Tasks.find(function(err, tasks){
 	console.log(tasks)
 	console.log(err)
 });
