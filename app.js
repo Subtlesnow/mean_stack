@@ -8,13 +8,6 @@ var port = process.env.PORT || 8080;
 
 mongoose.connect(config.database.connection_url);
 
-Tasks = require("./app/models/Tasks")
-
-Tasks.find(function(err, tasks){
-	console.log(tasks)
-	console.log(err)
-});
-
 app.use(bodyParser.json()); 
 
 app.use(express.static(__dirname + '/public'));
