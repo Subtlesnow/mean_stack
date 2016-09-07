@@ -1,6 +1,8 @@
 var path = require('path');
 var Tasks = require('./models/Tasks')
 
+// import Snacks
+
 module.exports = function(app) {
 
 	api_root = "/api/v1.0"
@@ -11,6 +13,8 @@ module.exports = function(app) {
 			return res.send({"works": tasks})
 		})
 	})
+
+	//create a new route named snacks
 
 	app.get('*', function(req, res){
 		res.sendFile(path.resolve(__dirname+'/../public/index.html'))
