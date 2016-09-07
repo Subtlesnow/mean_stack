@@ -3,10 +3,10 @@
   "description": "building out an example MEAN stack",
   "main": "",
   "authors": [
-    "Bill Shelton <sheltowt@gmail.com>"
+    "Steve VanWoerkom <subtleride@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/sheltowt/mean_stack",
+  "homepage": "https://github.com/subtlesnow/mean_stack",
   "ignore": [
     "**/.*",
     "node_modules",

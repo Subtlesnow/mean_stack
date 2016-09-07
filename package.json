@@ -2,10 +2,10 @@
   "name": "mean_stack",
   "version": "0.0.1",
   "description": "building out an example MEAN stack",
-  "author": "Bill Shelton <sheltowt@gmail.com>",
+  "author": "Steve VanWoerkom <subtleride@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheltowt/mean_stack"
+    "url": "https://github.com/subtlesnow/mean_stack"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
